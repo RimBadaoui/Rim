@@ -1,0 +1,148 @@
+{
+  "profile": {
+    "name": "Rim Ba",
+    "headline": "Software Engineering Student | Building Human-Centered AI Solutions",
+    "image": "Rim/assets/me.jpeg",
+    "statusBadges": [
+      "🎯 SEEKING: Summer 2026 SWE Internship",
+      "📍 LOCATION: MA / Remote",
+      "💡 FOCUS: Human-centered software & AI"
+    ],
+    "links": {
+      "github": "https://github.com/rimba",
+      "linkedin": "https://linkedin.com/in/rimba",
+      "email": "contact@rimba.dev"
+    }
+  },
+  "overview": {
+    "mission": "Passionate software engineer focused on building AI-powered solutions that prioritize human values, privacy, and accessibility. Currently seeking Summer 2026 SWE internship opportunities to apply my skills in real-world impact.",
+    "status": "Computer Science Student",
+    "interests": ["Software Engineering", "Artificial Intelligence", "Tech Policy", "Human-Centered Design"]
+  },
+  "projects": [
+    {
+      "id": "styles-by-sheyu",
+      "title": "Styles By Sheyu",
+      "tagline": "Modern hair salon website with online booking",
+      "techStack": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      "description": "Built a full-featured website for a local hair salon enabling online appointment booking, service browsing, and customer management.",
+      "highlights": [
+        "Developed responsive front-end with modern UI/UX design",
+        "Implemented backend booking system with PHP and MySQL",
+        "Integrated payment processing for online deposits",
+        "Increased booking efficiency by 40%"
+      ],
+      "links": {
+        "demo": "https://stylesbysheyu.com",
+        "code": "https://github.com/rimba/styles-by-sheyu"
+      },
+      "image": null
+    },
+    {
+      "id": "displaced-documents",
+      "title": "Displaced Documents App",
+      "tagline": "Digital archive platform for refugee documentation",
+      "techStack": ["React", "Node.js", "MongoDB", "AWS S3"],
+      "description": "Developed at Fletcher IDEA Lab to help displaced persons securely store and access important documents digitally.",
+      "highlights": [
+        "Designed secure document storage with encryption",
+        "Built user-friendly interface for non-technical users",
+        "Implemented multi-language support (English, Spanish, Arabic)",
+        "Collaborated with policy researchers on privacy features"
+      ],
+      "links": {
+        "code": "https://github.com/fletcher-idea-lab/displaced-docs"
+      },
+      "image": null
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Development Intern",
+      "organization": "Fletcher IDEA Lab",
+      "date": "Sep 2025 - Present",
+      "description": [
+        "Developing web applications addressing global policy challenges",
+        "Collaborating with graduate researchers on tech-policy initiatives"
+      ]
+    },
+    {
+      "role": "Freelance Web Developer",
+      "organization": "Self-Employed",
+      "date": "Jan 2024 - Present",
+      "description": [
+        "Built custom websites for local businesses and organizations",
+        "Managed full development lifecycle from design to deployment"
+      ]
+    },
+    {
+      "role": "Computer Science Tutor",
+      "organization": "Tufts University",
+      "date": "Sep 2024 - May 2025",
+      "description": [
+        "Mentored students in intro programming courses (C++, Python)",
+        "Held weekly office hours and code review sessions"
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "role": "Board Member",
+      "organization": "AI Safety Students Association",
+      "date": "2024 - Present",
+      "description": [
+        "Organizing workshops on AI ethics and safety",
+        "Leading discussions on responsible AI development",
+        "Building community around AI governance"
+      ]
+    },
+    {
+      "role": "Youth Program Coordinator",
+      "organization": "Community Outreach Initiative",
+      "date": "2023 - 2024",
+      "description": [
+        "Coordinated STEM education programs for underserved youth",
+        "Mentored 20+ students in coding and technology",
+        "Organized community tech literacy workshops"
+      ]
+    },
+    {
+      "role": "Interfaith Ambassador",
+      "organization": "Tufts Interfaith Center",
+      "date": "2023 - Present",
+      "description": [
+        "Facilitating dialogue on intersection of technology and ethics",
+        "Promoting inclusive community building"
+      ]
+    }
+  ],
+  "skills": {
+    "programming": ["HTML", "CSS", "JavaScript", "PHP", "SQL", "Node.js", "C++", "Python", "React"],
+    "concepts": ["Web Development", "Database Design", "RESTful APIs", "Responsive Design", "Version Control (Git)"],
+    "languages": ["English (Native)", "Spanish (Fluent)", "Arabic (Conversational)"],
+    "tools": ["VS Code", "GitHub", "Figma", "MongoDB", "MySQL", "AWS"]
+  },
+  "systemLog": [
+    "Initializing portfolio interface...",
+    "Loading neural network modules...",
+    "✓ Design system loaded successfully",
+    "✓ Navigation mesh established",
+    "Scanning project database...",
+    "✓ Found 2 active projects",
+    "Loading experience timeline...",
+    "✓ Experience data synchronized",
+    "Analyzing skill matrix...",
+    "✓ Technical proficiencies mapped",
+    "Security protocols: Human-centered design enabled",
+    "Privacy framework: Zero-knowledge principles active",
+    "AI ethics module: Operational",
+    "✓ All systems nominal",
+    "Status: Ready for internship opportunities",
+    "Recommendation: Explore projects section →",
+    "Tip: Check out leadership initiatives",
+    "Contact systems: Online and responsive",
+    "GitHub repositories: Public and documented",
+    "Resume: Available for download",
+    "System uptime: 100% commitment to excellence"
+  ]
+}
