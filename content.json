@@ -1,11 +1,10 @@
 {
   "profile": {
     "name": "Rim Ba",
-    "headline": "Software Engineering Student | Building Human-Centered AI Solutions",
+    "headline": "Computer Science Student | Building Human-Centered Software Solutions | Boston",
     "image": "Rim/assets/me.jpeg",
     "statusBadges": [
-      "🎯 SEEKING: Summer 2026 SWE Internship",
-      "📍 LOCATION: MA / Remote",
+      "🎯 SEEKING: Summer 2026 Tech Internship",
       "💡 FOCUS: Human-centered software & AI"
     ],
     "links": {
@@ -101,9 +100,9 @@
       "organization": "Community Outreach Initiative",
       "date": "2023 - 2024",
       "description": [
-        "Coordinated STEM education programs for underserved youth",
-        "Mentored 20+ students in coding and technology",
-        "Organized community tech literacy workshops"
+        "Educating 30+ youth in practical life skills",
+        "Training 10+ youth mentors in leadership",
+        "Organizing community service activities"
       ]
     },
     {
@@ -117,10 +116,9 @@
     }
   ],
   "skills": {
-    "programming": ["HTML", "CSS", "JavaScript", "PHP", "SQL", "Node.js", "C++", "Python", "React"],
-    "concepts": ["Web Development", "Database Design", "RESTful APIs", "Responsive Design", "Version Control (Git)"],
-    "languages": ["English (Native)", "Spanish (Fluent)", "Arabic (Conversational)"],
-    "tools": ["VS Code", "GitHub", "Figma", "MongoDB", "MySQL", "AWS"]
+    "programming": [ "C++", "Python", "JavaScript", "SQL", "C", "HTML", "CSS", "PHP", "Node.js", "React"],
+    "tools": ["VS Code", "GitHub", "Figma", "MongoDB", "MySQL", "AWS"],
+    "(human) languages": ["English (Native)", "Spanish (Fluent)", "Arabic (Fluent)"]
   },
   "systemLog": [
     "Initializing portfolio interface...",
