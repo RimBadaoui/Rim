@@ -11,12 +11,7 @@ const contentData = {
     "profile": {
         "name": "Rim Ba",
         "headline": "Software Engineering Student | Building Human-Centered AI Solutions",
-        "image": "Rim/assets/me.jpeg",
-        "statusBadges": [
-            "🎯 SEEKING: Summer 2026 SWE Internship",
-            "📍 LOCATION: MA / Remote",
-            "💡 FOCUS: Human-centered software & AI"
-        ],
+        "image": "assets/me.jpeg",
         "links": {
             "github": "https://github.com/rimba",
             "linkedin": "https://linkedin.com/in/rimba",
@@ -194,12 +189,12 @@ function initializeProfile() {
 
     // Create status badges
     const badgesContainer = document.getElementById('statusBadges');
-    profile.statusBadges.forEach(badge => {
-        const badgeEl = document.createElement('div');
-        badgeEl.className = 'status-badge';
-        badgeEl.textContent = badge;
-        badgesContainer.appendChild(badgeEl);
-    });
+    // profile.statusBadges.forEach(badge => {
+    //     const badgeEl = document.createElement('div');
+    //     badgeEl.className = 'status-badge';
+    //     badgeEl.textContent = badge;
+    //     badgesContainer.appendChild(badgeEl);
+    // });
 
     // Create social links
     const socialContainer = document.getElementById('socialLinks');
