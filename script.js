@@ -9,7 +9,7 @@ let logInterval = null;
 // Embedded content data (avoids CORS issues with file:// protocol)
 const contentData = {
     "profile": {
-        "name": "Rim Badaoui",
+        "name": "Rim Ba",
         "headline": "Software Engineering Student | Building Human-Centered AI Solutions",
         "image": "assets/me.jpeg",
         "links": {
