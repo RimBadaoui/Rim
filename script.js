@@ -10,18 +10,24 @@ let logInterval = null;
 const contentData = {
     "profile": {
         "name": "Rim Badaoui",
-        "headline": "Software Engineering Student | Building Human-Centered AI Solutions",
+        "headline": "Building Software and AI Solutions for Humans | Based in  Boston",
         "image": "assets/me.jpeg",
         "links": {
-            "github": "https://github.com/rimba",
-            "linkedin": "https://linkedin.com/in/rimba",
-            "email": "mailto:contact@rimba.dev"
-        }
+            "github": "https://github.com/RimBadaoui",
+            "linkedin": "https://www.linkedin.com/in/rim-badaoui-98b688281/",
+            "email": "rim.badaoui@tufts.edu"
+        },
+        "statusBadges": [
+            "📚Majors: Computer Science & Political Science",
+            "💡Interests: Software/AI Engineering, Project Management, Tech Policy"
+        ]
     },
     "overview": {
-        "mission": "Passionate software engineer focused on building AI-powered solutions that prioritize human values, privacy, and accessibility. Currently seeking Summer 2026 SWE internship opportunities to apply my skills in real-world impact.",
-        "status": "Computer Science Student",
-        "interests": ["Software Engineering", "Artificial Intelligence", "Tech Policy", "Human-Centered Design"]
+        "mission": `Skilled and passionate software engineer dedicated to 
+        building software that makes people's lives better and learning new things. 
+        Currently building several projects while studying computer science at Tufts University.`
+        // "status": "Computer Science Student",
+        // "interests": ["Software Engineering", "Artificial Intelligence", "Tech Policy", "Human-Centered Design"]
     },
     "projects": [
         {
@@ -37,12 +43,62 @@ const contentData = {
                 "Increased booking efficiency by 40%"
             ],
             "links": {
-                "demo": "https://stylesbysheyu.com",
-                "code": "https://github.com/rimba/styles-by-sheyu"
+                "demo": "https://www.theunfolding.net/styles_by_sheyu/index.html"
             },
             "image": null
         },
         {
+            "id": "displaced-documents",
+            "title": "Displaced Documents App",
+            "tagline": "Digital archive platform for refugee documentation",
+            "techStack": ["React", "Node.js", "MongoDB", "AWS S3"],
+            "description": "Developed at Fletcher IDEA Lab to help displaced persons securely store and access important documents digitally.",
+            "highlights": [
+                "Designed secure document storage with encryption",
+                "Built user-friendly interface for non-technical users",
+                "Implemented multi-language support (English, Spanish, Arabic)",
+                "Collaborated with policy researchers on privacy features"
+            ],
+            "links": {},
+            "image": "assets/me.jpeg"
+        },
+
+        //tests
+        {
+            "id": "displaced-documents",
+            "title": "Displaced Documents App",
+            "tagline": "Digital archive platform for refugee documentation",
+            "techStack": ["React", "Node.js", "MongoDB", "AWS S3"],
+            "description": "Developed at Fletcher IDEA Lab to help displaced persons securely store and access important documents digitally.",
+            "highlights": [
+                "Designed secure document storage with encryption",
+                "Built user-friendly interface for non-technical users",
+                "Implemented multi-language support (English, Spanish, Arabic)",
+                "Collaborated with policy researchers on privacy features"
+            ],
+            "links": {
+                "code": "https://github.com/fletcher-idea-lab/displaced-docs"
+            },
+            "image": null
+        },
+        {
+        "id": "displaced-documents",
+        "title": "Displaced Documents App",
+        "tagline": "Digital archive platform for refugee documentation",
+        "techStack": ["React", "Node.js", "MongoDB", "AWS S3"],
+        "description": "Developed at Fletcher IDEA Lab to help displaced persons securely store and access important documents digitally.",
+        "highlights": [
+            "Designed secure document storage with encryption",
+            "Built user-friendly interface for non-technical users",
+            "Implemented multi-language support (English, Spanish, Arabic)",
+            "Collaborated with policy researchers on privacy features"
+        ],
+        "links": {
+            "code": "https://github.com/fletcher-idea-lab/displaced-docs"
+        },
+        "image": null
+        },
+            {
             "id": "displaced-documents",
             "title": "Displaced Documents App",
             "tagline": "Digital archive platform for refugee documentation",
@@ -125,30 +181,31 @@ const contentData = {
         "concepts": ["Web Development", "Database Design", "RESTful APIs", "Responsive Design", "Version Control (Git)"],
         "languages": ["English (Native)", "Spanish (Fluent)", "Arabic (Conversational)"],
         "tools": ["VS Code", "GitHub", "Figma", "MongoDB", "MySQL", "AWS"]
-    },
-    "systemLog": [
-        "Initializing portfolio interface...",
-        "Loading neural network modules...",
-        "✓ Design system loaded successfully",
-        "✓ Navigation mesh established",
-        "Scanning project database...",
-        "✓ Found 2 active projects",
-        "Loading experience timeline...",
-        "✓ Experience data synchronized",
-        "Analyzing skill matrix...",
-        "✓ Technical proficiencies mapped",
-        "Security protocols: Human-centered design enabled",
-        "Privacy framework: Zero-knowledge principles active",
-        "AI ethics module: Operational",
-        "✓ All systems nominal",
-        "Status: Ready for internship opportunities",
-        "Recommendation: Explore projects section →",
-        "Tip: Check out leadership initiatives",
-        "Contact systems: Online and responsive",
-        "GitHub repositories: Public and documented",
-        "Resume: Available for download",
-        "System uptime: 100% commitment to excellence"
-    ]
+    }
+    //,
+    // "systemLog": [
+    //     "Initializing portfolio interface...",
+    //     "Loading neural network modules...",
+    //     "✓ Design system loaded successfully",
+    //     "✓ Navigation mesh established",
+    //     "Scanning project database...",
+    //     "✓ Found 2 active projects",
+    //     "Loading experience timeline...",
+    //     "✓ Experience data synchronized",
+    //     "Analyzing skill matrix...",
+    //     "✓ Technical proficiencies mapped",
+    //     "Security protocols: Human-centered design enabled",
+    //     "Privacy framework: Zero-knowledge principles active",
+    //     "AI ethics module: Operational",
+    //     "✓ All systems nominal",
+    //     "Status: Ready for internship opportunities",
+    //     "Recommendation: Explore projects section →",
+    //     "Tip: Check out leadership initiatives",
+    //     "Contact systems: Online and responsive",
+    //     "GitHub repositories: Public and documented",
+    //     "Resume: Available for download",
+    //     "System uptime: 100% commitment to excellence"
+    // ]
 };
 
 // ===================================
@@ -164,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
         initializeLeadership();
         initializeSkills();
         initializeContact();
-        initializeSystemLog();
+        // initializeSystemLog();
 
         // Setup interactions
         setupNavigation();
@@ -189,12 +246,12 @@ function initializeProfile() {
 
     // Create status badges
     const badgesContainer = document.getElementById('statusBadges');
-    // profile.statusBadges.forEach(badge => {
-    //     const badgeEl = document.createElement('div');
-    //     badgeEl.className = 'status-badge';
-    //     badgeEl.textContent = badge;
-    //     badgesContainer.appendChild(badgeEl);
-    // });
+    profile.statusBadges.forEach(badge => {
+        const badgeEl = document.createElement('div');
+        badgeEl.className = 'status-badge';
+        badgeEl.textContent = badge;
+        badgesContainer.appendChild(badgeEl);
+    });
 
     // Create social links
     const socialContainer = document.getElementById('socialLinks');
@@ -226,21 +283,22 @@ function initializeOverview() {
         <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
             ${overview.mission}
         </p>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
-            <div style="flex: 1; min-width: 200px; padding: 1rem; background: rgba(255,255,255,0.02); border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.05);">
-                <div style="font-size: 0.75rem; color: var(--color-text-dim); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem;">Current Status</div>
-                <div style="font-weight: 600; color: var(--color-accent-cyan);">${overview.status}</div>
-            </div>
-            <div style="flex: 1; min-width: 200px; padding: 1rem; background: rgba(255,255,255,0.02); border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.05);">
-                <div style="font-size: 0.75rem; color: var(--color-text-dim); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem;">Interests</div>
-                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                    ${overview.interests.map(interest =>
-        `<span style="background: rgba(168, 85, 247, 0.1); color: var(--color-accent-purple); padding: 0.25rem 0.75rem; border-radius: 0.375rem; font-size: 0.875rem; border: 1px solid rgba(168, 85, 247, 0.2);">${interest}</span>`
-    ).join('')}
-                </div>
-            </div>
-        </div>
-    `;
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;"></div>`
+        //status and interests boxes in overview mission
+            // <div style="flex: 1; min-width: 200px; padding: 1rem; background: rgba(255,255,255,0.02); border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.05);">
+            //     <div style="font-size: 0.75rem; color: var(--color-text-dim); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem;">Current Status</div>
+            //     <div style="font-weight: 600; color: var(--color-accent-cyan);">${overview.status}</div>
+            // </div>
+            // <div style="flex: 1; min-width: 200px; padding: 1rem; background: rgba(255,255,255,0.02); border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.05);">
+            //     <div style="font-size: 0.75rem; color: var(--color-text-dim); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem;">Interests</div>
+            //     <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            //         ${overview.interests.map(interest =>
+    //     `<span style="background: rgba(168, 85, 247, 0.1); color: var(--color-accent-purple); padding: 0.25rem 0.75rem; border-radius: 0.375rem; font-size: 0.875rem; border: 1px solid rgba(168, 85, 247, 0.2);">${interest}</span>`
+    // ).join('')}
+    //             </div>
+    //         </div> 
+        // </div>
+    ;
 }
 
 // ===================================
@@ -252,6 +310,7 @@ function initializeProjects() {
 
     projects.forEach((project, index) => {
         const projectCard = document.createElement('div');
+        console.log("created element projectCard");
         projectCard.className = 'project-card';
         projectCard.style.animationDelay = `${index * 0.1}s`;
 
@@ -277,7 +336,7 @@ function initializeProjects() {
             <div class="project-actions">
                 ${project.links.demo ?
                 `<a href="${project.links.demo}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        🌐 Live Demo
+                        🌐 View
                     </a>` : ''}
                 ${project.links.code ?
                 `<a href="${project.links.code}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
@@ -439,39 +498,39 @@ function initializeContact() {
 // ===================================
 // System Log Animation
 // ===================================
-function initializeSystemLog() {
-    const { systemLog } = contentData;
-    const container = document.getElementById('systemLog');
+// function initializeSystemLog() {
+//     const { systemLog } = contentData;
+//     const container = document.getElementById('systemLog');
 
-    // Start animated log messages
-    logInterval = setInterval(() => {
-        if (logMessageIndex < systemLog.length) {
-            const logLine = document.createElement('div');
-            logLine.className = 'log-line';
+//     // Start animated log messages
+//     logInterval = setInterval(() => {
+//         if (logMessageIndex < systemLog.length) {
+//             const logLine = document.createElement('div');
+//             logLine.className = 'log-line';
 
-            const timestamp = new Date().toLocaleTimeString('en-US', {
-                hour12: false,
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit'
-            });
+//             const timestamp = new Date().toLocaleTimeString('en-US', {
+//                 hour12: false,
+//                 hour: '2-digit',
+//                 minute: '2-digit',
+//                 second: '2-digit'
+//             });
 
-            logLine.innerHTML = `<span class="log-timestamp">[${timestamp}]</span>${systemLog[logMessageIndex]}`;
-            container.appendChild(logLine);
+//             logLine.innerHTML = `<span class="log-timestamp">[${timestamp}]</span>${systemLog[logMessageIndex]}`;
+//             container.appendChild(logLine);
 
-            // Auto-scroll to bottom
-            container.scrollTop = container.scrollHeight;
+//             // Auto-scroll to bottom
+//             container.scrollTop = container.scrollHeight;
 
-            logMessageIndex++;
-        } else {
-            // Loop back to start after a pause
-            setTimeout(() => {
-                container.innerHTML = '';
-                logMessageIndex = 0;
-            }, 5000);
-        }
-    }, 1500); // New message every 1.5 seconds
-}
+//             logMessageIndex++;
+//         } else {
+//             // Loop back to start after a pause
+//             setTimeout(() => {
+//                 container.innerHTML = '';
+//                 logMessageIndex = 0;
+//             }, 5000);
+//         }
+//     }, 1500); // New message every 1.5 seconds
+// }
 
 // ===================================
 // Navigation
