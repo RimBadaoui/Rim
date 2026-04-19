@@ -1,7 +1,7 @@
 {
   "profile": {
-    "name": "Rim Bad",
-    "headline": "Computer Science Student | Building software and AI solutions for humans | Based in Boston",
+    "name": "Rim Badaoui",
+    "headline": "Computer Science Student | Building Software and AI Solutions for Businesses and Real People | Based in Boston",
     "image": "Rim/assets/me.jpeg",
     "statusBadges": [
     ],
@@ -12,7 +12,7 @@
     }
   },
   "overview": {
-    "mission": "Passionate & skilled software engineer looking to make real-world impact.",
+    "mission": "Passionate & skilled software engineer making real-world impact.",
     "status": "Computer Science & Political Science double major",
     "interests": [
       "Software Engineering",
@@ -33,39 +33,36 @@
         "PHP",
         "MySQL"
       ],
-      "description": "Built a full-featured website for a local hair salon enabling online appointment booking, service browsing, and customer management.",
+      "description": "Website for a local hair salon enabling online appointment booking, service browsing, and customer management.",
       "highlights": [
-        "Developed responsive front-end with modern UI/UX design",
-        "Implemented backend booking system with PHP and MySQL",
-        "Integrated payment processing for online deposits",
-        "Increased booking efficiency by 40%"
+        "Developed a full-stack website with admin and client interfaces to manage and track bookings",
+        "Structured and linked PHP and MySQL backend to store available/booked appointment times",
+        "Increased efficiency for both owner and client by immediately updating available slots and sending appontment confirmation email"
       ],
       "links": {
-        "demo": "https://stylesbysheyu.com",
-        "code": "https://github.com/rimba/styles-by-sheyu"
+        "demo": "https://www.theunfolding.net/styles_by_sheyu/index.html"
       },
-      "image": null
+      "image": "Rim/assets/sbs-homepage.jpeg"
     },
     {
-      "id": "displaced-documents",
-      "title": "Displaced Documents App",
-      "tagline": "Digital archive platform for refugee documentation",
+      "id": "Pathfinder",
+      "title": "Pathfinder",
+      "tagline": "WhatsApp AI chatbot helping immigrants navigate employment",
       "techStack": [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "AWS S3"
+        "Claude 3 Haiku",
+        "Python",
+        "WhatsApp SDK", 
+        "Benchmarking", 
+        " evaluation"
       ],
-      "description": "Developed at Fletcher IDEA Lab to help displaced persons securely store and access important documents digitally.",
+      "description": "Multi-ligual AI chatbot delivered over WhatsApp that guides immigrants through employment and authorization processes with multilingual support — meeting users on a platform they already trust.",
       "highlights": [
-        "Designed secure document storage with encryption",
-        "Built user-friendly interface for non-technical users",
-        "Implemented multi-language support (English, Spanish, Arabic)",
-        "Collaborated with policy researchers on privacy features"
+        "Integrated Claude 3 Haiku via Anthropic API for accurate, context-aware responses",
+        "Conducted user testing, user research, and LLM benchmarking to optimize response quality", 
+        "Multi-level evaluation combining task benchmarks and iterative user feedback"
+
       ],
-      "links": {
-        "code": "https://github.com/fletcher-idea-lab/displaced-docs"
-      },
+      "links": {},
       "image": null
     }
   ],
